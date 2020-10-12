@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Cheat Sheet</title>
+    </head>
+    <body>
+        <!-- Headings -->
+        <h1>Heading One</h1>
+        <h2>Heading Two</h2>
+        <h3>Heading Three</h3>
+        <h4>Heading Four</h4>
+        <h5>Heading Five</h5>
+        <h6>Heading Six</h6>
+
+        <a href="blog.html"> Go to blog page</a>
+        <hr>
+
+        <!-- Paragraph -->
+        <p>
+            Lorem, <strong> bold here </strong> sit amet consectetur adipisicing
+              <a href="http://dismoni.com" target="_blank"> open dismoni in a new tab </a> ex ut id impedit culpa? Impedit reiciendis sunt labore aut? Dolor veniam magni, ducimus ex quidem consequatur quis nemo!
+        </p>
+        <p>
+            Lorem, <em> I'm italic part </em> amet consectetur adipisicing elit. Sint enim officia ex ut id impedit culpa? Impedit reiciendis sunt labore aut? Dolor veniam magni, ducimus ex quidem consequatur quis nemo!
+        </p>
+
+
+        <!-- Lists (Ordered <ol> & Unordered <ul>) -->
+        <ul> <!-- *... *... *... -->
+            <li>List Item 1</li>
+            <li>List Item 2</li>
+            <li>List Item 3</li>
+            <li>List Item 4</li>
+        </ul>
+
+        <ol>  <!-- 1... 2... 3... -->
+            <li>List Item 1</li>
+            <li>List Item 2</li>
+            <li>List Item 3</li>
+            <li>List Item 4</li>
+        </ol>
+
+        <table>
+            <thead> <!-- Table Header -->
+                <tr>    <!-- Table Row -->
+                    <th>Name</th>   <!-- Table Header -->
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody> <!-- Table Body -->
+                <tr>
+                    <td>Betul</td>  <!-- Table Data -->
+                    <td>betul@dismoni.com</td>
+                </tr>
+                <tr> 
+                    <td>Tilda</td>
+                    <td></td>
+                </tr>
+                <tr> 
+                    <td></td>
+                    <td>mustafa@dismoni.com</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br>    <!-- Empty line -->
+        <hr>    <!-- ---------- -->
+        <div style="margin-top: 30px;"></div>
+
+        <!-- Forms -->
+        <form action="process.php" method="POST">
+            <!-- 'input' for 'text' such as name, surname and 'placeholder' -->
+            <label>First Name</label>
+            <input type="text" name="first-name" placeholder="Enter first name">
+            
+            <label>Last Name</label>
+            <input type="text" name="last-name">
+            <br> <!-- new line -->
+            <br>
+
+            <div>  <!-- use div to put them in different lines-->
+                <label>Email</label>
+                <input type="email" name="email">
+            </div>
+            <br>
+
+            <!-- 'textarea' for long inputs -->
+            <div>
+                <label>Message: </label>
+                <textarea name="message"></textarea>
+            </div>
+            <br>
+            
+            <!-- 'select' (combo box for selection) -->
+            <div>
+                <label>Gender: </label>
+                <select name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <br>
+
+            <!-- 'input' for 'number' with a default 'value' -->
+            <div>
+                <label>Age: </label>
+                <input type="number" name="age" value="30"> 
+            </div>
+            <br>
+
+            <!-- 'input' for 'date' -->
+            <div>
+                <label>Birth Date: </label>
+                <input type="date" name="birthdate">
+            </div>
+            <br>
+
+            <!-- Button defined with 'input' -->
+            <input type="submit" name="submit">
+        </form>
+        <hr>
+
+        <!-- Button -->
+        <button>Click Me</button>
+        <br>
+
+        <!-- Image -->
+        <a href="images/rpJw7V.jpg">
+            <img src="images/rpJw7V.jpg" alt="A nice image" width="400" height="200">
+        </a>
+
+        <!-- Quotations <blockquote> <abbr> <cite> -->
+        <blockquote>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptatem alias illo quia aperiam voluptatibus, quidem fugiat nisi ratione unde earum soluta tempore possimus molestiae? Asperiores saepe dolore vitae aliquam?
+        </blockquote>
+
+        <p>The <abbr title="show it when you hover www"> www </abbr> is awesome.</p>
+
+        <p><cite>dismoni</cite> is created by betul.</p>
+
+    </body>
+</html>

@@ -1,0 +1,199 @@
+/*
+Box model from left:
+    margin - border - padding - content
+
+margin: top right bottom left (clockwise)
+    Ex: margin: 5px 10px 5px 10px
+*/
+
+/**{*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*}*/
+
+body {
+    background-color: #f0f0f0;
+    color: dimgray;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    /*font: normal 16px Arial, Helvetica, sans-serif;*/
+
+    line-height: 1.6em;
+}
+
+.button{
+    background-color: #333333;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    color: white;
+}
+
+.button:hover{
+    background-color: red;
+    color: white;
+}
+
+.clr{
+    clear: both;
+}
+
+/*it applies any link in the page*/
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: red;
+}
+
+a:active {
+    color: green;
+}
+
+a:visited {
+    color: gray;
+}
+
+.container {
+    width: 80%; /* use percentage instead of XXXpx to make it more responsive*/
+    margin: auto;
+}
+
+.box-1 {
+    background-color: #333;
+    color: #fff;
+
+    border: 5px black solid;
+    border-top-width: 10px;
+    border-bottom-width: 10px;
+
+    padding: 2%;
+    margin: 20px 0;
+}
+
+.box-1 h1 {
+    font-family: Verdana;
+    font-weight: 800;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 0.2em; /* space between each letter*/
+    word-spacing: 0.4em;
+}
+
+.box-2 {
+    border: 5px dotted red;
+    margin: 20px 0;
+    padding: 20px;
+}
+
+.categories {
+    border: 1px #ccc solid;
+    border-radius: 15px;
+    padding-left: 20px;
+    margin: 20px 0;
+}
+
+.categories h2 {
+    text-align: center;
+}
+
+.categories ul {
+    list-style: square;
+}
+
+.categories li {
+    padding-bottom: 8px;
+    border-bottom: dotted 1px #333;
+    list-style-image: url(../images/check.png);
+}
+
+.my-form {
+    padding: 20px;
+}
+
+.my-form .form-group {
+    padding-bottom: 15px;
+}
+
+.my-form label {
+    display: block;
+}
+
+/*only for text inputs; not affects Submit button*/
+.my-form input[type="text"], .my-form textarea {
+    padding: 8px;
+    width: 100%;
+}
+
+.block{
+    float: left;
+    width: 33.3%;
+    border:1px solid #ccc;
+    padding: 5px;
+    box-sizing: border-box; /* paddinge ragmen alt satira gecmesini engelledi */
+}
+
+#main-block{
+    float: left;
+    width: 70%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#sidebar{
+    float: right;
+    width: 30%;
+    background-color: darkgray;
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.p-box{
+    width: 800px;
+    height: 500px;
+    border: 1px solid #000;
+    margin-top: 30px;
+    position:relative; /* This setting keeps the h1 and h2 below in box */
+    background-image: url("../images/bgimage.jpg");
+    background-repeat: no-repeat;
+    background-position: center top; /* or: 100px 200px*/
+}
+
+.p-box h1{
+    position: absolute;
+    top:100px;
+    left: 40px;
+}
+
+.p-box h2{
+    position: absolute;
+    bottom:50px;
+    right: 40px;
+}
+
+.fix-me{
+    position: fixed;    /* It is fixed on screen; scrolling does not affect it: Navbar, call us button etc*/
+    top:400px;
+}
+
+.my-list li:first-child{
+    background: mediumvioletred;
+}
+
+.my-list li:last-child{
+    background: deepskyblue;
+}
+
+.my-list li:nth-child(3){
+    background: orangered;
+}
+
+.my-list li:nth-child(even){
+    background: yellow;
+}
